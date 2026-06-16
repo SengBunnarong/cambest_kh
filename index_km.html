@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamBest | ទំព័រដើម</title>
+    <link rel="icon" type="image/png" href="image/iconlogo.png">
+    <link rel="stylesheet" href="style_km.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Khmer&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap" rel="stylesheet">
+</head>
+    <!-- LOGO BAR -->
+    <div class="logo-bar">
+        <img src="image/logo_home.png" alt="CamBest Logo">
+
+        <!-- RIGHT CONTROLS -->
+        <div class="header-controls">
+            <!-- LANGUAGE SWITCHER -->
+            <div class="lang-switcher">
+                <img id="flag" src="kh.jpg" alt="Flag">
+                <select id="langSelect" onchange="switchLang()">
+                    <option value="km">ខ្មែរ</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index_km.html" class="active">ទំព័រដើម</a></li>
+            <li><a href="about_km.html">អំពីសាលា</a></li>
+            <li><a href="programs_km.html">វគ្គសិក្សា</a></li>
+            <li><a href="gallery_km.html">រូបភាព</a></li>
+            <li><a href="contact_km.html">ទំនាក់ទំនង</a></li>
+        </ul>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <img src="student_images/01 (3).png" alt="Slide 1">
+            <img src="student_images/4.jpg" alt="Slide 2">
+            <img src="student_images/03 (3).png" alt="Slide 3">
+            <img src="student_images/student2.png" alt="Slide 4">
+            <img src="student_images/photo_2026-04-24_11-25-58.jpg" alt="Slide 5">
+            <img src="student_images/02 (3).png" alt="Slide 6">
+        </div>
+
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+        
+
+    </div>
+
+    <div class="content">
+        <p>
+            បង្កើតឡើងក្នុងឆ្នាំ ២០២៦ សាលាបឋមសិក្សារបស់យើង ប្តេជ្ញាផ្តល់ការអប់រំប្រកបដោយគុណភាពដល់សិស្សានុសិស្សវ័យក្មេង។ យើងខិតខំអភិវឌ្ឍចំណេះដឹង សីលធម៌ និងភាពច្នៃប្រឌិតរបស់សិស្សគ្រប់រូប។ បេសកកម្មរបស់យើងគឺផ្តល់ឱកាសឱ្យសិស្សបានសិក្សា អភិវឌ្ឍខ្លួន និងសម្រេចបាននូវសក្តានុពលពេញលេញរបស់ពួកគេ។ រួមគ្នា យើងប្តេជ្ញាកសាងអនាគតដ៏ភ្លឺស្វាងសម្រាប់ជំនាន់ក្រោយ។
+        </p>
+    </div>
+
+        <div class="programs">
+        <h2>វគ្គសិក្សា</h2>
+
+        <div class="program-grid">
+
+            <div class="program-card">
+                <img src="student_images/03 (3).png" alt="Primary School">
+                <h3>ថ្នាក់មត្តេយ្យសិក្សា</h3>
+                <p>Quality education for young children.</p>
+            </div>
+
+            <div class="program-card">
+                <img src="image/en_cn.png" alt="English Class">
+                <h3>ថ្នាក់អង់គ្លេស និងចិន</h3>
+                <p>Learn communication and language skills.</p>
+            </div>
+
+            <div class="program-card">
+                <img src="edu.png" alt="Chinese Class">
+                <h3>ថ្នាក់បង្រៀនគួរ</h3>
+                <p>Extra classes for Highschool students.</p>
+            </div>
+
+            <div class="program-card">
+                <img src="image/a03b6e264f0cf13cd2ef2aa8d97e0d8b.jpg" alt="Computer Class">
+                <h3>ថ្នាក់កុំព្យូទ័រ</h3>
+                <p>Learn Microsoft Word, Excel, and PowerPoint.</p>
+            </div>
+
+            </div>
+        </div>
+
+    <!-- SCHOOL PHOTOS CAROUSEL -->
+    <div class="school-carousel-wrapper">
+        <h2 class="school-carousel-title">សាលារៀន</h2>
+        <div class="school-carousel">
+            <div class="school-track" id="schoolTrack">
+                <img src="school_locations/front.jpg" alt="School Photo 1">
+                <img src="school_locations/gate.jpg" alt="School Photo 2">
+                <img src="school_locations/wide.jpg" alt="School Photo 3">
+                <img src="school_locations/ok.jpg" alt="School Photo 4">
+            </div>
+            <button class="school-btn prev" onclick="moveSchool(-1)">&#10094;</button>
+            <button class="school-btn next" onclick="moveSchool(1)">&#10095;</button>
+            <div class="school-dots" id="schoolDots"></div>
+        </div>
+    </div>
+
+    <div class="admission">
+        <h2>ការចូលរៀន</h2>
+        <p>ចុះឥឡូវនេះដើម្បីឱ្យកូនរបស់អ្នកទទួលបានការអប់រំ និងបណ្តុះបណ្តាលដោយការយកចិត្តទុកដាក់ពីលោកគ្រូអ្នកគ្រូ</p>
+        <div class="admission-btn-wrapper">
+            <a href="contact.html" class="admission-btn">ចុះឥឡូវនេះ</a>
+        </div>
+    </div>
+
+<footer style="background-color: #113b61; color: rgba(255,255,255,0.85); margin-top: 60px;">
+    <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; padding: 50px 20px;">
+
+        <div>
+            <h3 style="color: #f8931f; margin-bottom: 15px; font-size: 18px;">សាលារៀន​ ខេមប៊េស</h3>
+            <p style="font-size: 14px; line-height: 1.6;">ការអប់រំប្រកបដោយគុណភាព សម្រាប់សិស្សានុសិស្សវ័យក្មេង ក្នុងបរិយាកាសប្រកបដោយការយកចិត្តទុកដាក់</p>
+        </div>
+
+        <div>
+            <h3 style="color: #f8931f; margin-bottom: 15px; font-size: 18px;">ទំនាក់ទំនង</h3>
+            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 6px;">
+                <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i>សង្កាត់ឃ្មួញ, រាជធានីភ្នំពេញ
+            </p>
+            <div style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; margin-bottom: 6px;">
+                <i class="fa-solid fa-phone" style="margin-top: 3px; flex-shrink: 0;"></i>
+                <div style="display: flex; flex-direction: column; gap: 2px; line-height: 1.6;">
+                    <span>096 674 679</span>
+                    <span>017 737 362</span>
+                    <span>097 352 387 8</span>
+                </div>
+            </div>
+            <p style="font-size: 14px; line-height: 1.6; margin: 0;">
+                <i class="fa-solid fa-envelope" style="margin-right: 6px;"></i> cambestschool@email.com
+            </p>
+        </div>
+
+    </div>
+
+    <div style="border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 14px 20px; font-size: 13px; color: rgba(255,255,255,0.5);">
+        <p style="margin: 0;">© 2026 CamBest School. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="main_kh.js"></script>
+</body>
+</html>
