@@ -7,15 +7,15 @@ function switchLang() {
         flag.src = 'kh.jpg';
         flag.alt = 'Khmer Flag';
 
-        const pages = {
-            'index.html': 'index_km.html',
-            'about.html': 'about_km.html',
-            'programs.html': 'programs_km.html',
-            'gallery.html': 'gallery_km.html',
-            'contact.html': 'contact_km.html'
-        };
+    const pages = {
+        'index.html': '/index_km.html',
+        'about.html': '/about_km.html',
+        'programs.html': '/programs_km.html',
+        'gallery.html': '/gallery_km.html',
+        'contact.html': '/contact_km.html'
+    };
 
-        const currentPage = window.location.pathname.split('/').pop();
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
         if (pages[currentPage]) {
             window.location.href = pages[currentPage];
