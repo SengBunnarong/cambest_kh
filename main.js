@@ -7,13 +7,13 @@ function switchLang() {
         flag.src = 'kh.jpg';
         flag.alt = 'Khmer Flag';
 
-    const pages = {
-        'index.html': '/index_km.html',
-        'about.html': '/about_km.html',
-        'programs.html': '/programs_km.html',
-        'gallery.html': '/gallery_km.html',
-        'contact.html': '/contact_km.html'
-    };
+        const pages = {
+            'index.html': 'index_km.html',
+            'about.html': 'about_km.html',
+            'programs.html': 'programs_km.html',
+            'gallery.html': 'gallery_km.html',
+            'contact.html': 'contact_km.html'
+        };
 
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
@@ -28,71 +28,75 @@ function switchLang() {
 }
 
 // --- MAIN CAROUSEL (students) ---
-let current = 0;
 const track = document.getElementById('carouselTrack');
-const slides = track.querySelectorAll('img');
-const total = slides.length;
-const dotsContainer = document.getElementById('carouselDots');
+if (track) {
+    let current = 0;
+    const slides = track.querySelectorAll('img');
+    const total = slides.length;
+    const dotsContainer = document.getElementById('carouselDots');
 
-slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.classList.add('dot');
-    if (i === 0) dot.classList.add('active');
-    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-    dot.addEventListener('click', () => goToSlide(i));
-    dotsContainer.appendChild(dot);
-});
-
-function updateDots() {
-    document.querySelectorAll('.dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === current);
+    slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
     });
-}
 
-function goToSlide(index) {
-    current = index;
-    track.style.transform = `translateX(-${current * 100}%)`;
-    updateDots();
-}
+    function updateDots() {
+        document.querySelectorAll('.dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === current);
+        });
+    }
 
-function moveSlide(direction) {
-    current = (current + direction + total) % total;
-    goToSlide(current);
-}
+    function goToSlide(index) {
+        current = index;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        updateDots();
+    }
 
-setInterval(() => moveSlide(1), 4000);
+    window.moveSlide = function(direction) {
+        current = (current + direction + total) % total;
+        goToSlide(current);
+    };
+
+    setInterval(() => window.moveSlide(1), 3000);
+}
 
 // --- SCHOOL CAROUSEL ---
-let schoolCurrent = 0;
 const schoolTrack = document.getElementById('schoolTrack');
-const schoolSlides = schoolTrack.querySelectorAll('img');
-const schoolTotal = schoolSlides.length;
-const schoolDotsContainer = document.getElementById('schoolDots');
+if (schoolTrack) {
+    let schoolCurrent = 0;
+    const schoolSlides = schoolTrack.querySelectorAll('img');
+    const schoolTotal = schoolSlides.length;
+    const schoolDotsContainer = document.getElementById('schoolDots');
 
-schoolSlides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.classList.add('school-dot');
-    if (i === 0) dot.classList.add('active');
-    dot.setAttribute('aria-label', 'Go to school slide ' + (i + 1));
-    dot.addEventListener('click', () => goToSchool(i));
-    schoolDotsContainer.appendChild(dot);
-});
-
-function updateSchoolDots() {
-    document.querySelectorAll('.school-dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === schoolCurrent);
+    schoolSlides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.classList.add('school-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.setAttribute('aria-label', 'Go to school slide ' + (i + 1));
+        dot.addEventListener('click', () => goToSchool(i));
+        schoolDotsContainer.appendChild(dot);
     });
-}
 
-function goToSchool(index) {
-    schoolCurrent = index;
-    schoolTrack.style.transform = `translateX(-${schoolCurrent * 100}%)`;
-    updateSchoolDots();
-}
+    function updateSchoolDots() {
+        document.querySelectorAll('.school-dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === schoolCurrent);
+        });
+    }
 
-function moveSchool(direction) {
-    schoolCurrent = (schoolCurrent + direction + schoolTotal) % schoolTotal;
-    goToSchool(schoolCurrent);
-}
+    function goToSchool(index) {
+        schoolCurrent = index;
+        schoolTrack.style.transform = `translateX(-${schoolCurrent * 100}%)`;
+        updateSchoolDots();
+    }
 
-setInterval(() => moveSchool(1), 4500);
+    window.moveSchool = function(direction) {
+        schoolCurrent = (schoolCurrent + direction + schoolTotal) % schoolTotal;
+        goToSchool(schoolCurrent);
+    };
+
+    setInterval(() => window.moveSchool(1), 4500);
+}

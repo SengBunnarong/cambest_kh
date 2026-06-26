@@ -3,77 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CamBest | Programs</title>
-    <link rel="icon" type="png" href="iconlogo.png">
+    <title>CamBest School | Programs</title>
+    <link rel="icon" type="image/png" href="image/iconlogo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap" rel="stylesheet">
 </head>
-<style>
-    .programs-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 30px 15px;
-}
-
-.program-item {
-    text-align: center;
-}
-
-.program-item h2 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-.program-item img {
-    max-width: 700px;
-    width: 100%;
-}
-
-.enroll-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f5f5f5;
-}
-
-.enroll-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.enroll-section p {
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.enroll-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #1a73e8;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: 600;
-    transition: background-color 0.2s;
-}
-
-.enroll-btn:hover {
-    background-color: #1558b0;
-}
-
-</style>
 <body>
 
     <!-- LOGO BAR -->
     <div class="logo-bar">
-        <img src="logo_home.png" alt="CamBest Logo">
+        <img src="image/logo_home.png" alt="CamBest Logo">
         <div class="header-controls">
             <div class="lang-switcher">
                 <img id="flag" src="eng.jpg" alt="Flag">
@@ -96,65 +38,76 @@
         </ul>
     </nav>
 
-    <!-- PROGRAMS SECTION -->
-    <section class="programs-section">
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1>Our Programs &amp; Fee Structure</h1>
+        <p>Explore the programs CamBest School offers for every stage of learning.</p>
+    </div>
+
+    <!-- PROGRAM ITEMS -->
+    <section class="programs-page-section">
 
         <div class="program-item">
-            <h2>Primary School Program</h2>
-            <img src="fee1.png" alt="Fee List 1">
+            <div class="program-item-header">
+                <i class="fa-solid fa-school"></i>
+                <h2>Primary School Program</h2>
+            </div>
+            <img src="image/fee1.png" alt="Primary School Fee List">
         </div>
 
         <div class="program-item">
-            <h2>Language Program</h2>
-            <img src="fee2.png" alt="Fee List 2">
+            <div class="program-item-header">
+                <i class="fa-solid fa-language"></i>
+                <h2>Language Program</h2>
+            </div>
+            <img src="image/fee2.png" alt="Language Program Fee List">
         </div>
 
         <div class="program-item">
-            <h2>Extra Classes</h2>
-            <img src="fee3.png" alt="Fee List 3">
+            <div class="program-item-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>Extra Classes</h2>
+            </div>
+            <img src="image/fee3.png" alt="Extra Classes Fee List">
         </div>
 
     </section>
 
-    <!-- ENROLL NOW SECTION -->
+    <!-- ENROLL SECTION -->
     <section class="enroll-section">
         <h2>Ready to Enroll?</h2>
-        <p>Contact us today and we'll help you get started.</p>
-        <a href="contact.html" class="enroll-btn">Enroll Now</a>
+        <p>Contact us today and we'll help you get started on the right program for your child.</p>
+        <a href="contact.html" class="enroll-btn"><i class="fa-solid fa-paper-plane"></i> &nbsp;Contact Us to Enroll</a>
     </section>
 
-<footer style="background-color: #113b61; color: rgba(255,255,255,0.85); margin-top: 60px;">
-    <div style="max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; padding: 50px 20px;">
-
-        <div>
-            <h3 style="color: #f8931f; margin-bottom: 15px; font-size: 18px;">CamBest School</h3>
-            <p style="font-size: 14px; line-height: 1.6;">Providing quality education for young learners in a safe, supportive, and friendly environment.</p>
-        </div>
-
-        <div>
-            <h3 style="color: #f8931f; margin-bottom: 15px; font-size: 18px;">Contact</h3>
-            <p style="font-size: 14px; line-height: 1.6; margin-bottom: 6px;">
-                <i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i> Svay Pak Commune, Russey Keo District, Phnom Penh
-            </p>
-            <div style="display: flex; align-items: flex-start; gap: 8px; font-size: 14px; margin-bottom: 6px;">
-                <i class="fa-solid fa-phone" style="margin-top: 3px; flex-shrink: 0;"></i>
-                <div style="display: flex; flex-direction: column; gap: 2px; line-height: 1.6;">
-                    <span>096 674 679</span>
-                    <span>017 737 362</span>
-                    <span>097 352 387 8</span>
-                </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="image/logo_footer.png" alt="CamBest Logo" class="footer-logo">
+                <p>Providing quality education for young learners in a safe, supportive, and friendly environment since 2026.</p>
             </div>
-            <p style="font-size: 14px; line-height: 1.6; margin: 0;">
-                <i class="fa-solid fa-envelope" style="margin-right: 6px;"></i> cambestschool@email.com
-            </p>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About</a>
+                <a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a>
+                <a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a>
+                <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Sangkat Khmuonh, Phnom Penh</p>
+                <p><i class="fa-solid fa-phone"></i> 096 674 679</p>
+                <p><i class="fa-solid fa-phone"></i> 017 737 362</p>
+                <p><i class="fa-solid fa-phone"></i> 097 352 387 8</p>
+                <p><i class="fa-solid fa-envelope"></i> cambestschool@email.com</p>
+            </div>
         </div>
-
-    </div>
-
-    <div style="border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 14px 20px; font-size: 13px; color: rgba(255,255,255,0.5);">
-        <p style="margin: 0;">© 2026 CamBest School. All rights reserved.</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>© 2026 CamBest School. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>

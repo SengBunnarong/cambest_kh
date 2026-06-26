@@ -59,4 +59,4 @@ function moveSlide(direction) {
     goToSlide(current);
 }
 
-setInterval(() => moveSlide(1), 4000);
+setInterval(() => moveSlide(1), 3000);
