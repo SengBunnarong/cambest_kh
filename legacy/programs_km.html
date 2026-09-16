@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamBest School | វគ្គសិក្សា</title>
+    <link rel="icon" type="image/png" href="image/iconlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LOGO BAR -->
+    <div class="logo-bar">
+        <img src="image/logo_home.png" alt="CamBest Logo">
+        <div class="header-controls">
+            <div class="lang-switcher">
+                <img id="flag" src="kh.jpg" alt="Flag">
+                <select id="langSelect" onchange="switchLang()">
+                    <option value="km">ខ្មែរ</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index_km.html">ទំព័រដើម</a></li>
+            <li><a href="about_km.html">អំពីសាលា</a></li>
+            <li><a href="programs_km.html" class="active">វគ្គសិក្សា</a></li>
+            <li><a href="gallery_km.html">រូបភាព</a></li>
+            <li><a href="contact_km.html">ទំនាក់ទំនង</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <h1>កម្មវិធីសិក្សា​ និងតម្លៃ</h1>
+        <p>មានវគ្គសិក្សាជាច្រើនសម្រាប់កុមារ ដើម្បីចុះឈ្មោះចូលរៀន</p>
+    </div>
+
+    <!-- PROGRAM ITEMS -->
+    <section class="programs-page-section">
+
+        <div class="program-item">
+            <div class="program-item-header">
+                <i class="fa-solid fa-school"></i>
+                <h2>វគ្គសិក្សាសថ្នាក់មត្តេយ្យ</h2>
+            </div>
+            <img src="image/fee1.png" alt="Primary School Fee List">
+        </div>
+
+        <div class="program-item">
+            <div class="program-item-header">
+                <i class="fa-solid fa-language"></i>
+                <h2>វគ្គសបង្រៀនភាសា និងកំុព្យូទ័រ</h2>
+            </div>
+            <img src="image/fee2.png" alt="Language Program Fee List">
+        </div>
+
+        <div class="program-item">
+            <div class="program-item-header">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>វគ្គសិក្សាបន្ថែម</h2>
+            </div>
+            <img src="image/fee3.png" alt="Extra Classes Fee List">
+        </div>
+
+    </section>
+
+    <!-- ENROLL SECTION -->
+    <section class="enroll-section">
+        <h2>ចង់ចុះឥឡូវនេះមែនទេ?</h2>
+        <p>ទាក់ទងមកកាន់សាលាដើម្បីទទួលបានព័ត៌មានបន្ថែម</p>
+        <a href="contact_km.html" class="enroll-btn"><i class="fa-solid fa-paper-plane"></i> &nbsp;ចុះឈ្មោះ</a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="image/logo_footer.png" alt="CamBest Logo" class="footer-logo">
+                <p>ការអប់រំប្រកបដោយគុណភាព សម្រាប់សិស្សានុសិស្សវ័យក្មេង ក្នុងបរិយាកាសប្រកបដោយការយកចិត្តទុកដាក់</p>
+            </div>
+            <div class="footer-box">
+                <h3>លីងរហ័ស</h3>
+                <a href="index_km.html"><i class="fa-solid fa-chevron-right"></i> ទំព័រដើម</a>
+                <a href="about_km.html"><i class="fa-solid fa-chevron-right"></i> អំពីសាលា</a>
+                <a href="programs_km.html"><i class="fa-solid fa-chevron-right"></i> វគ្គសិក្សា</a>
+                <a href="gallery_km.html"><i class="fa-solid fa-chevron-right"></i> រូបភាព</a>
+                <a href="contact_km.html"><i class="fa-solid fa-chevron-right"></i> ទំនាក់ទំនង</a>
+            </div>
+            <div class="footer-box">
+                <h3>ទាក់ទង</h3>
+                <p><i class="fa-solid fa-location-dot"></i> សង្កាត់ឃ្មួញ, រាជធានីភ្នំពេញ</p>
+                <p><i class="fa-solid fa-phone"></i> 096 674 679</p>
+                <p><i class="fa-solid fa-phone"></i> 017 737 362</p>
+                <p><i class="fa-solid fa-phone"></i> 097 352 387 8</p>
+                <p><i class="fa-solid fa-envelope"></i> cambestschool@email.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 CamBest School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main_kh.js"></script>
+</body>
+</html>
